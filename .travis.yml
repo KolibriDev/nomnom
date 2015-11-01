@@ -12,6 +12,7 @@ deploy:
   - "./output/snapshot/nomnom_linux_amd64.tar.gz"
   - "./output/snapshot/nomnom_darwin_amd64.zip"
   - "./output/snapshot/nomnom_windows_amd64.zip"
+  - "./output/snapshot/downloads.md"
   on:
     repo: KolibriDev/nomnom
     tags: true
