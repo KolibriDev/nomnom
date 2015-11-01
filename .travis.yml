@@ -1,19 +1,13 @@
 language: go
 go:
-  - 1.5
+- 1.5
 install:
-  - go get github.com/laher/goxc
+- go get github.com/laher/goxc
 before_deploy: git fetch --tags
 deploy:
   provider: releases
-  skip_cleanup: true
   api_key:
-    secure: zAk291KNoSCJgeH6hAKhUm58VqOiZ/a4oBgR716gpJ+XFT0cqlYVxFXw3LpPpO8lIxPB+DJY694A2Z/bz+YiSbdNdXXa5laHkHuP10E1ttTnGyThqkmTrldh12GFnQ0FETnMucHnjymM25FRBWEOxcSTYnCXG3uojoR4l3AqlxOBwdEGV3RHh20pZke24uvBDuTJOVP5fTvyktA+RZ9TJc02pZrGWnqbaaChJflACkPQ25ZY9EUMtaEJBEnCegsAcFlvFxup5MUGsVxrybPQpDNGe8gEIiU6mbS15LUZq8pCUx7rl+XaAb005vINeSVZaz+HM8Z3K5Fg59r3rheCs/TQ8NpAWXfT+yM8uvyAlbgwf9JtHSeXRkHl+UfFzCX9cJ7hg1ZDvFSz6ML4rXkcCLpt42KPG+nwc5SWQ2/aUq8Z83NZTdc2uZ6oPho5rCrj26DfOULFYPrinDDoWa3iP0UoiqdtQCvW3NxQOUblK3tFlKSQBdtxX0T75UHrCy5Z8ygvfCrvwRMnGanovygwadd74qMM3Hvhk+n1Zmph3e26qGCZxm3cIBysbvISZT0r6b9xDTHdtV2BRkfX21nP7WFyEm/Wh00o0yfxBk6tZWDDw3Eq1fKjAObGkqJHYcDTpPlMr6Us/N0Q6OIQwTbEIG3vMlBweOacwiWP8xebUa8=
-  file: 
-    - "./output/snapshots/nomnom_darwin_amd64.zip"
-    - "./output/snapshots/nomnom_linux_amd64.tar.gz"
-    - "./output/snapshots/nomnom_windows_amd64.zip"
+    secure: FQvJIn2HRvBdv1pefoA3g5KIsPHxDRpy9YDF8QJhjvhebcmkZk5lkwmL74lO8DK0SMLyxT06nLGnduxBRTf5+rCZNg8D5HHcsrwxdbtunqjfz/iA24l02a4bOI00UHnYaFlyNSCQQRtMvch0HY85+uTLVPU6nMhxtrZ+t+qZn15qH62HspPgDGuLA/l1V3LDvBgdr4nOIGZnSIvwXpGO01RM2bWkZrxsFCjKsK8Ouxs6eFtHAhYVH7mDpMN5/Q1nyIboJpaOjfJlzy5wAHzlbVL2vIzuTtbkMF3t4FaNofEdRotzvgEUGPrsNsfbPssXqwL9tcTuM2EvupgY+at51FFAyVLvydzHleGxJLW4+iBenmxMeht3PzJOFC+nS3bgpXa2OAZpF9YrWqDlfHUSq4xnaAhPd3YcKNQDIE9JI17lyv+cTWIAEjafeVDvtQUwk4M0jwTlYOoDdBPU3bTHQ1q7ZvJYaDr8xZqikdy9m/BW5buFD71EB9db63yz++A779e3SgANjmk1ntBdicrmTpMuGl3nga6Jk1LVImyq81n4imkM0D3h7fVUk7XgXxYUumIjj+mT+W6SYtNMF7iq4nwAM9ZSH2XLt4qCH+djUoritwEDDpa+gYWrSb5bWwn4mDVvMs65UuvihIkPrzXygbWHCzXBA0mmY4qXFwniUiw=
+  file: "./output/snapshot/nomnom_linux_amd64.tar.gz"
   on:
     repo: KolibriDev/nomnom
-    all_branches: true
-    tags: true
