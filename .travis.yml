@@ -11,3 +11,5 @@ deploy:
   file: "./output/snapshot/nomnom_linux_amd64.tar.gz"
   on:
     repo: KolibriDev/nomnom
+    tags: true
+    all_branches: true
