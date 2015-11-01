@@ -14,6 +14,6 @@ deploy:
     - "./output/snapshots/nomnom_linux_amd64.tar.gz"
     - "./output/snapshots/nomnom_windows_amd64.zip"
   on:
-    repo: KolibriDev/nomnom.nom
+    repo: KolibriDev/nomnom
     all_branches: true
     tags: true
