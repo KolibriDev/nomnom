@@ -1,0 +1,6 @@
+{
+	"ArtifactsDest": "output/",
+	"Os": "linux,amd64 darwin,amd64 windows,amd64",
+	"BuildConstraints": "linux,amd64 darwin,amd64 windows,amd64",
+	"ConfigVersion": "0.9"
+}
