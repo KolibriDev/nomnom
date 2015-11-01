@@ -8,7 +8,10 @@ deploy:
   provider: releases
   api_key:
     secure: FQvJIn2HRvBdv1pefoA3g5KIsPHxDRpy9YDF8QJhjvhebcmkZk5lkwmL74lO8DK0SMLyxT06nLGnduxBRTf5+rCZNg8D5HHcsrwxdbtunqjfz/iA24l02a4bOI00UHnYaFlyNSCQQRtMvch0HY85+uTLVPU6nMhxtrZ+t+qZn15qH62HspPgDGuLA/l1V3LDvBgdr4nOIGZnSIvwXpGO01RM2bWkZrxsFCjKsK8Ouxs6eFtHAhYVH7mDpMN5/Q1nyIboJpaOjfJlzy5wAHzlbVL2vIzuTtbkMF3t4FaNofEdRotzvgEUGPrsNsfbPssXqwL9tcTuM2EvupgY+at51FFAyVLvydzHleGxJLW4+iBenmxMeht3PzJOFC+nS3bgpXa2OAZpF9YrWqDlfHUSq4xnaAhPd3YcKNQDIE9JI17lyv+cTWIAEjafeVDvtQUwk4M0jwTlYOoDdBPU3bTHQ1q7ZvJYaDr8xZqikdy9m/BW5buFD71EB9db63yz++A779e3SgANjmk1ntBdicrmTpMuGl3nga6Jk1LVImyq81n4imkM0D3h7fVUk7XgXxYUumIjj+mT+W6SYtNMF7iq4nwAM9ZSH2XLt4qCH+djUoritwEDDpa+gYWrSb5bWwn4mDVvMs65UuvihIkPrzXygbWHCzXBA0mmY4qXFwniUiw=
-  file: "./output/snapshot/nomnom_linux_amd64.tar.gz"
+  file: 
+  - "./output/snapshot/nomnom_linux_amd64.tar.gz"
+  - "./output/snapshot/nomnom_darwin_amd64.zip"
+  - "./output/snapshot/nomnom_windows_amd64.zip"
   on:
     repo: KolibriDev/nomnom
     tags: true
